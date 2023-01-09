@@ -1,5 +1,10 @@
 "use strict";
-let revenue = 1000;
-let bonus = "5";
-let res = revenue + bonus;
-console.log(res);
+class User {
+    constructor(name) {
+        this.name = name;
+    }
+}
+const user = new User("Anton");
+console.log(user);
+user.name = "Dima";
+console.log(user);

@@ -1,6 +1,15 @@
-let revenue = 1000;
-let bonus = "500";
+class User {
+  name: string;
 
-let res = revenue + bonus;
+  constructor(name: string) {
+    this.name = name;
+  }
+}
 
-console.log(res);
+const user = new User("Anton");
+
+console.log(user);
+
+user.name = "Dima";
+
+console.log(user);
